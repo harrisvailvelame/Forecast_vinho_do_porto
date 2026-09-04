@@ -12,9 +12,9 @@ The original notebook includes exploratory analysis, correlation analysis, visua
 
 ```text
 .
-├── RedWineForecast_pRq.ipynb   # original EDA and modeling notebook
-├── winequality-red.csv          # red-wine quality dataset used by the notebook
-├── requirements.txt             # stable core dependencies
+├── red_wine_quality_modeling.ipynb  # EDA and modeling notebook
+├── winequality-red.csv               # red-wine quality dataset
+├── requirements.txt                  # stable core dependencies
 └── .github/workflows/quality.yml
 ```
 
@@ -38,7 +38,7 @@ Regression model evaluation
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-jupyter notebook RedWineForecast_pRq.ipynb
+jupyter notebook red_wine_quality_modeling.ipynb
 ```
 
 The legacy notebook may reference environment-sensitive AutoML packages. Those are intentionally not forced into the core requirements because compatibility depends on Python and operating-system versions.
