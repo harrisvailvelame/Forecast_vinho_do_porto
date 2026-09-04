@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate notebook JSON
-        run: python -m json.tool RedWineForecast_pRq.ipynb > /dev/null
+        run: python -m json.tool red_wine_quality_modeling.ipynb > /dev/null
       - name: Validate dataset is non-empty CSV
         run: |
           python - <<'PY'
